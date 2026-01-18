@@ -28,10 +28,10 @@ The project was created using:
 
 Packages:
 
-sms.model -\> Student class (data model)\
-sms.manager -\> business logic and database access\
-sms.gui -\> graphical user interface\
-sms.main -\> application entry point
+sms.model -> Student class (data model)\
+sms.manager -> business logic and database access\
+sms.gui -> graphical user interface\
+sms.main -> application entry point
 
 This structure ensures clear separation between GUI, logic and data.
 
@@ -104,17 +104,7 @@ public boolean addStudent(Student student) {
 }
 ```
 
-### 3. Singleton (concept)
-
-Database access is centralized in one class.
-
-Example:
-
-``` java
-private static final String DB_URL = "jdbc:sqlite:students.db";
-```
-
-### 4. Observer
+### 3. Observer
 
 Swing buttons use ActionListener.
 
@@ -126,36 +116,25 @@ addBtn.addActionListener(e -> {
 });
 ```
 
-### 5. Factory Method
-
-Student objects are created using constructor.
-
-Example:
-
-``` java
-Student s = new Student(id, name, age, grade);
-```
-
 ## Code Organization
 
-The code is modular and documented. Each layer is separated.
+The code is modular. Each layer is separated.
 
 ## Final Result
 
 The project is a fully functional Java application with GUI and SQLite
 database.
 
-The application meets all requirements of the assignment.
 
 ## Code Organization
 
 The project is divided into packages.  
 Each part of the application has its own role.
 
-GUI, database logic and data model are separated, which makes the code clear and easy to read.
+GUI, database logic and data model are separated, which makes the code clear.
 
 ## Final Result
 
 The project is a working Java application with graphical interface and SQLite database.
 
-All functions work correctly and the application meets the project requirements.
+
