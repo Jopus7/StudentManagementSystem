@@ -5,13 +5,18 @@ import java.util.ArrayList;
 
 public interface StudentManager {
 
-    void addStudent(Student student);
+    // Adds a new student to the database
+    boolean addStudent(Student student);
 
-    void removeStudent(String studentID);
+    // Removes student by ID
+    boolean removeStudent(String studentID);
 
-    void updateStudent(String studentID, Student updatedStudent);
+    // Updates existing student data
+    boolean updateStudent(String studentID, Student updatedStudent);
 
+    // Returns list of all students
     ArrayList<Student> displayAllStudents();
 
+    // Calculates average grade of all students
     double calculateAverageGrade();
 }

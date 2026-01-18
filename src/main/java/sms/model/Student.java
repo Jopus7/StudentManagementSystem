@@ -2,11 +2,13 @@ package sms.model;
 
 public class Student {
 
+    // Student attributes
     private String studentID;
     private String name;
     private int age;
     private double grade;
 
+    // Constructor - init
     public Student(String studentID, String name, int age, double grade) {
         this.studentID = studentID;
         this.name = name;
@@ -14,6 +16,7 @@ public class Student {
         setGrade(grade);
     }
 
+    // Getter and setter for student ID
     public String getStudentID() {
         return studentID;
     }
@@ -22,6 +25,7 @@ public class Student {
         this.studentID = studentID;
     }
 
+    // Getter and setter for name
     public String getName() {
         return name;
     }
@@ -30,6 +34,7 @@ public class Student {
         this.name = name;
     }
 
+    // Getter and setter for age with validation age <=0
     public int getAge() {
         return age;
     }
@@ -41,6 +46,7 @@ public class Student {
         this.age = age;
     }
 
+    // Getter and setter for grade with validation grade < 0 || grade > 100
     public double getGrade() {
         return grade;
     }
@@ -52,10 +58,12 @@ public class Student {
         this.grade = grade;
     }
 
+    // Displays student information
     public void displayInfo() {
         System.out.println(this);
     }
 
+    // Returns student data as string
     @Override
     public String toString() {
         return "ID: " + studentID +
