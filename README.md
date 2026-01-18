@@ -1,2 +1,5 @@
-# StudentManagementSystem
-Advanced Student Management System in Java (Swing + SQLite)
+# Student Management System
+
+Advanced Student Management System in Java using Swing and SQLite.
+
+
